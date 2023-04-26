@@ -189,19 +189,19 @@ p {
 
 }
 
-.stacks h2 {
+.skills h2 {
     text-align: center;
 
 }
 
-.stacks {
+.skills {
     background-image: url(5072279_26696981.jpg);
     background-size: cover;
     background-position: center;
 }
 
 
-.stacks-container {
+.skills-container {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -211,7 +211,7 @@ p {
     
     }
 
-.stacks-container .stacks-box {
+.skills-container .skills-box {
     /*flex: 1 1 20rem;*/
     background: rgba(26, 26, 26, 0.91);
     padding: 30px 20px;
@@ -224,19 +224,19 @@ p {
 
 }
 
-.stacks-container .stacks-box:hover {
+.skills-container .skills-box:hover {
     border-color: var(--contrast-color2);
     transform: scale(1.06);
     box-shadow: 0 0 7px 2px var(--contrast-color2);
 }
 
-.stacks-container .stacks-box h2 {
+.skills-container .skills-box h2 {
     font-size: 18px;
     margin-bottom: 20px;
     color: var(--contrast-color);
 }
 
-.stacks-box i {
+.skills-box i {
     font-size: 60px;
     color: var(--contrast-color);
     margin-bottom: 20px;
@@ -282,7 +282,7 @@ p {
 
 }
 
-.stacks p,
+.skills p,
 .courses p {
     text-align: center;
     margin-bottom: 20px;
@@ -429,15 +429,15 @@ footer .footer-iconTop i {
         margin: 20px;
     }
 
-    .stacks-container {
+    .skills-container {
         margin: 0;
     }
 
-    .stacks-container .stacks-box {
+    .skills-container .skills-box {
         height: auto;
     }
 
-    .stacks-container .stacks-box h2 {
+    .skills-container .skills-box h2 {
         font-size: 14px;
     }
 
@@ -496,14 +496,14 @@ footer .footer-iconTop i {
 
         .courses-container,
         .projects,
-        .stacks-container {
+        .skills-container {
             display: flex;
             flex-direction: column;
         }
 
         .courses-box,
         .projects .projects-content,
-        .stacks-container .stacks-box {
+        .skills-container .skills-box {
 
             width: 95%;
             height: auto;
