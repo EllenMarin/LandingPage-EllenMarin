@@ -88,6 +88,20 @@ section {
     background-position: center;
     padding-top: 200px;
 }
+/*parallax*/
+.parallax img{
+    
+    position: absolute;
+    margin-top: 100px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    pointer-events: none;
+    
+}
 
 .home-content  {
     padding-right: 20px;
@@ -176,11 +190,13 @@ p {
 .projects-content {
     width: 60%;
     padding: 20px ;
+    
 }
 
 .about-img,
 .projects-img {
     width: 40%;
+   
 }
 
 .projects img,
@@ -195,7 +211,7 @@ p {
 }
 
 .skills {
-    background-image: url(5072279_26696981.jpg);
+    background-image: url(img/5072279_26696981.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -211,6 +227,7 @@ p {
     
     }
 
+
 .skills-container .skills-box {
     /*flex: 1 1 20rem;*/
     background: rgba(26, 26, 26, 0.91);
@@ -220,8 +237,16 @@ p {
     border: 1px solid var(--contrast-color2);
     transition: .5s ease;
     height: 350px;
+    
+    transform: translateX(-100);
+    opacity: 0;
 
-
+}
+.show {
+    
+    transform: translateX(0);
+    opacity: 1 !important;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out !important;
 }
 
 .skills-container .skills-box:hover {
@@ -260,6 +285,9 @@ p {
     border-radius: 20px;
     transition: .5s ease;
     background: rgb(26, 26, 26);
+
+    transform: translateX(-100);
+    opacity: 0;
 }
 
 .projects-link img:hover {
@@ -271,7 +299,7 @@ p {
 }
 
 .courses {
-    background-image: url(18880200_v882-kul-41.jpg);
+    background-image: url(img/18880200_v882-kul-41.jpg) ;
     background-size: cover;
     background-position: center;
 }
@@ -310,6 +338,8 @@ p {
     box-shadow: 0 0 7px 2px var(--contrast-color2);
     /*justify-content: center;
     align-items: center;*/
+    transform: translateX(-100);
+    opacity: 0;
 
 }
 
@@ -359,11 +389,14 @@ p {
 
 }
 
-.end-paragraph p {
-    background: black;
+.end-paragraph p{
     color: var(--contrast-color2);
     font-size: 18px;
-    margin-top: 80px;
+    padding-top: 20px;
+    text-shadow: 2px 2px 4px rgb(6, 6, 6);
+
+    transform: translateX(-100);
+    opacity: 0;
 }
 
 footer {
@@ -526,6 +559,10 @@ footer .footer-iconTop i {
             text-align: center;
             margin-top: 50px;
         }
+
+        .parallax img{
+            display: none;
+        }
     }
 }
 
@@ -565,6 +602,8 @@ footer .footer-iconTop i {
     animation-name: fadeInRight;
 }
 
-.home-content .animate-text{
-   color: var(--text-color) !important;
+.animate-text,
+.animate-text2{
+   color: var(--title-color) !important;   
+
 }
